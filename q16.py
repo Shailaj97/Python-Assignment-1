@@ -5,8 +5,10 @@ b.	Filter out the words starting with ‘A’ using filter functionality
 c.	Concat all words using reduce
 """
 
-fruits = ["Apple", "Banana", "Pear", "Apricot", "Orange"]
-list(map(str.upper , fruits))
-list(filter(lambda x: list(x)[0]=='A',fruits))
 from functools import reduce
-reduce(lambda x,y: x+y , fruits)
+fruits = ["Apple", "Banana", "Pear", "Apricot", "Orange"]
+print(list(map(str.upper , fruits)))
+print(list(filter(lambda x: list(x)[0]=='A',fruits)))
+
+
+print(reduce(lambda x,y: x+y , fruits))
